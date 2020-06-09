@@ -15,7 +15,7 @@ To run this example you will need  **Java 1.8+, Scala 2.12.10, SBT 1.3.8, spark 
 Before running make sure kafka and Cassandra is running in your local
 Or you can start fresh by following the below steps :
 
-#######Running Cassandra:
+#### Running Cassandra:
 Go to the Cassandra bin directory and run the Below command to start cassandra server
 ```
 cassandra -f
@@ -32,7 +32,7 @@ CREATE  KEYSPACE [IF NOT EXISTS] public
    };
 CREATE TABLE [IF NOT EXISTS] public.car("Name" text primary key, "Cylinders" int, "Horsepower" int );
 ```
-####### Running Kafka:
+#### Running Kafka:
 Go inside your kafka directory:
 - Start Zookeper:
 ```
@@ -55,14 +55,14 @@ Produce some sample messages in the kafka topic kafkaToCassandra
 >>{"Name":"amc gremlin", "Miles_per_Gallon":21, "Cylinders":6, "Displacement":199, "Horsepower":90, "Weight_in_lbs":2648, "Acceleration":15, "Year":"1970-01-01", "Origin":"USA"}
 >> {"Name":"chevy c20", "Miles_per_Gallon":10, "Cylinders":8, "Displacement":307, "Horsepower":200, "Weight_in_lbs":4376, "Acceleration":15, "Year":"1970-01-01", "Origin":"USA"}
 
-####### Runnuing spark application 
+#### Runnuing spark application 
 Go inside the project and open a terminal and run the below commands:
 ```
 sbt clean compile
 sbt run
 ```
 
-###Result
+##Result
 Go to the cassandra shell and run the below command:
 ```
 select * from public.car;
