@@ -4,7 +4,7 @@ A basic template of integrating spark strucutured streaming with Kafka and Cassa
 ## Table of contents  
 1. [Getting Started](#Getting-Started)  
 2. [Running](#Running) 
-3. [Result] (#Result)
+3. [Result](#Result)
   
 ## Getting Started  
 #### Minimum requirements  
@@ -62,7 +62,7 @@ sbt clean compile
 sbt run
 ```
 
-##Result
+## Result
 Go to the cassandra shell and run the below command:
 ```
 select * from public.car;
