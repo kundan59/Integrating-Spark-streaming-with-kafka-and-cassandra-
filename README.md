@@ -18,11 +18,11 @@ Or you can start fresh by following the below steps :
 #### Running Cassandra:
 Go to the Cassandra bin directory and run the Below command to start cassandra server
 ```
-cassandra -f
+./cassandra -f
 ```
 Then, go inside the cassandra shell by running command:
 ```
-cqlsh
+./cqlsh
 ```
 In the shell, Run below commands to create Keyspace and table into cassandra
 ```
